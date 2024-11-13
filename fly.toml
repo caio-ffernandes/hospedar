@@ -1,6 +1,6 @@
 # fly.toml file for your app
 
-app = "hospedar"  # Nome da sua aplicação no Fly.io
+app = "final-grerhq"  # Nome da sua aplicação no Fly.io
 
 [build]
   builder = "heroku/builder:20"
@@ -8,6 +8,9 @@ app = "hospedar"  # Nome da sua aplicação no Fly.io
 [[services]]
   internal_port = 8080
   protocol = "tcp"
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
   http_checks = []
 
   [services.concurrency]
