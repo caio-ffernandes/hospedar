@@ -3,7 +3,7 @@
 app = "hospedar"  # Nome da sua aplicação no Fly.io
 
 [build]
-  builder = "heroku/python:3.9"
+  builder = "heroku/buildpacks:20"
 
 [[services]]
   internal_port = 8080
