@@ -1,6 +1,6 @@
 # fly.toml file for your app
 
-app = "final-grerhq"  # Nome da sua aplicação no Fly.io
+app = "Hospedar"  # Nome da sua aplicação no Fly.io
 
 [build]
   builder = "heroku/builder:20"
