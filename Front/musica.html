@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesGe2.css">
+    <title>The Brazilians</title>
+</head>
+<style>
+    .black{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    }
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <img class="img_logo" src="images/logo_official.png" alt="">
+        </div>
+        <div class="links">
+            <div class="tab-container">
+                <input type="radio" name="tab" id="tab1" class="tab tab--1" />
+                <label class="tab_label" for="tab1">Início</label>
+        
+                <input type="radio" name="tab" id="tab2" class="tab tab--2" />
+                <label class="tab_label" for="tab2">Literatura</label>
+        
+                <input type="radio" name="tab" id="tab3" class="tab tab--3" />
+                <label class="tab_label" for="tab3">Gastronomia</label>
+        
+                <input type="radio" name="tab" id="tab4" class="tab tab--4" />
+                <label class="tab_label" for="tab4">Cinema</label>
+        
+                <input type="radio" name="tab" id="tab5" class="tab tab--5" checked/>
+                <label class="tab_label" for="tab5">Música</label>
+        
+                <input type="radio" name="tab" id="tab6" class="tab tab--6" />
+                <label class="tab_label" for="tab6">Arquitetura</label>
+        
+                <div class="indicator"></div>
+            </div>
+        </div>
+        <div class="button_search">
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Type your text">
+                <button class="search__button">
+                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <button class="bt_login"><a class="link_login" href="login.html">Login</a></button>
+        </div>
+    </nav>
+    <main>
+        <div class="bannermusica">
+            <img src="images/bannerMusica.jpg" class="imgmusica" alt="Imagem de fundo">
+            <div class="texto-banner">
+                <h1 class="animated-text">A Alma da Música Brasileira</h1>
+                <h2 class="animated-text">Descubra a Riqueza dos Ritmos Brasileiros e Sua Influência Global</h2>
+                <div class="underline"></div>
+            </div>
+        </div>
+        <section class="generos">
+            <div class="generos-container">
+                <div class="genero">
+                    <i class="fas fa-music"></i>
+                    <h3>Samba</h3>
+                    <p>O samba é um dos gêneros mais populares do Brasil, com suas raízes na cultura afro-brasileira e ritmos vibrantes.</p>
+                </div>
+                <div class="genero">
+                    <i class="fas fa-guitar"></i>
+                    <h3>Bossa Nova</h3>
+                    <p>Uma fusão suave de samba e jazz, a bossa nova é conhecida por suas letras poéticas e melodias envolventes.</p>
+                </div>
+                <div class="genero">
+                    <i class="fas fa-compact-disc"></i>
+                    <h3>Rock Nacional</h3>
+                    <p>O rock é um dos gêneros mais populares do Brasil, influenciado pela música internacional e marcado por letras sobre questões sociais desde os anos 1960.
+                    </p>
+                </div>
+                <div class="genero">
+                    <i class="fas fa-headphones-alt"></i>
+                    <h3>MPB (Música Popular Brasileira)</h3>
+                    <p>A MPB é um estilo que mistura diversos gêneros, destacando as vozes e composições de artistas brasileiros contemporâneos.</p>
+                </div>
+            </div>
+        </section>
+        <section class="music">
+            <div class="introduction">
+                <h2 class="title">Vibrações da Música Brasileira</h2>
+                <p class="description">A música brasileira é uma expressão cultural rica e diversificada, moldada por influências indígenas, africanas e europeias. Gêneros como samba, bossa nova, forró e sertanejo não apenas refletem a identidade do povo brasileiro, mas também contam histórias e emoções. Essa diversidade musical enriquece a cultura nacional e posiciona o Brasil como uma força influente no cenário global da música.</p>
+                <select name="" id="generosMusicais" class="generosMusicais">
+                    <option value="">Selecione um gênero musical</option>
+                    <!-- As opções serão preenchidas aqui -->
+                </select>
+            </div>
+            <div class="iconMusic-container">
+                <div class="iconMusic">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256-96a96 96 0 1 1 0 192 96 96 0 1 1 0-192zm0 224a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="generoExp">
+            <h2 class="titulo">Celebrando os Artistas Brasileiros</h2>
+            <p class="descricao">Explore a vibrante cena musical brasileira, que traz ao mundo uma mistura única de ritmos e estilos. Do samba ao funk, da MPB ao sertanejo, descubra o talento e a diversidade sonora que fazem do Brasil um berço de grandes artistas.</p>
+        </section>
+        <section class="artistas">
+            <div class="artista">
+                <img src="./images/rita.jpg" alt="Artista 1">
+                <div class="nomeArtista">Rita Lee</div>
+                <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO4gIEox?si=B51qDitoQ02UJYPnKmNL3w"><svg width="300px" height="50" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect x="0" y="0" width="400" height="100" fill="none"/>
+                    <rect x="100.00" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="112.42" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="124.84" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="137.27" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="149.69" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="162.11" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="174.53" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="186.96" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="199.38" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="211.80" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="224.22" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="236.64" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="249.07" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="261.49" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="273.91" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="286.33" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="298.76" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="311.18" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="323.60" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="336.02" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="348.44" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="360.87" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="373.29" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <g transform="translate(20,20)"><path fill="#fff" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0M43.73,43.2a1.85,1.85,0,0,0-.47-2.43,5,5,0,0,0-.48-.31,30.64,30.64,0,0,0-5.92-2.72,37.07,37.07,0,0,0-11.56-1.84c-1.33.07-2.67.12-4,.23a52.44,52.44,0,0,0-7.08,1.12,3.45,3.45,0,0,0-.54.16,1.83,1.83,0,0,0-1.11,2.08A1.79,1.79,0,0,0,14.37,41a4.29,4.29,0,0,0,.88-.12,48.93,48.93,0,0,1,8.66-1.15,35.33,35.33,0,0,1,6.75.37,28.29,28.29,0,0,1,10.25,3.61,4.77,4.77,0,0,0,.5.27,1.85,1.85,0,0,0,2.33-.74M47.41,35a2.34,2.34,0,0,0-.78-3.19l-.35-.21a35.72,35.72,0,0,0-7.38-3.3,45.39,45.39,0,0,0-15.7-2.13,41.19,41.19,0,0,0-7.39.92c-1,.22-2,.48-2.94.77A2.26,2.26,0,0,0,11.29,30a2.32,2.32,0,0,0,1.44,2.2,2.47,2.47,0,0,0,1.67,0,37,37,0,0,1,10.38-1.46,43,43,0,0,1,7.91.74,35.46,35.46,0,0,1,9.58,3.18c.66.34,1.3.72,1.95,1.08A2.33,2.33,0,0,0,47.41,35m.35-8.49A2.79,2.79,0,0,0,52,24.11c0-.2,0-.4-.08-.6a2.78,2.78,0,0,0-1.4-1.85,35.91,35.91,0,0,0-6.41-2.91,56.19,56.19,0,0,0-16.86-2.89,58.46,58.46,0,0,0-7,.21,48.31,48.31,0,0,0-6.52,1c-.87.2-1.73.42-2.58.7a2.73,2.73,0,0,0-1.85,2.68,2.79,2.79,0,0,0,2,2.61,2.9,2.9,0,0,0,1.6,0c.87-.23,1.75-.47,2.63-.66a45.52,45.52,0,0,1,7.26-.91,57.42,57.42,0,0,1,6.4,0,53.7,53.7,0,0,1,6.11.72,42.63,42.63,0,0,1,8.49,2.35,33.25,33.25,0,0,1,4,2"/></g>
+                </svg></a>
+            </div>
+            <div class="artista">
+                <img src="./images/chico.jfif" alt="Artista 2">
+                <div class="nomeArtista">Chico Buarque</div> 
+                <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO3Piqqc?si=Kr6Bb3O-RVWQNebXt_U0hA"><svg width="300px" height="50" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect x="0" y="0" width="400" height="100" fill="none"/>
+                    <rect x="100.00" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="112.42" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="124.84" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="137.27" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="149.69" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="162.11" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="174.53" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="186.96" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="199.38" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="211.80" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="224.22" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="236.64" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="249.07" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="261.49" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="273.91" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="286.33" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="298.76" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="311.18" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="323.60" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="336.02" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="348.44" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="360.87" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="373.29" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <g transform="translate(20,20)"><path fill="#ffffff" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0M43.73,43.2a1.85,1.85,0,0,0-.47-2.43,5,5,0,0,0-.48-.31,30.64,30.64,0,0,0-5.92-2.72,37.07,37.07,0,0,0-11.56-1.84c-1.33.07-2.67.12-4,.23a52.44,52.44,0,0,0-7.08,1.12,3.45,3.45,0,0,0-.54.16,1.83,1.83,0,0,0-1.11,2.08A1.79,1.79,0,0,0,14.37,41a4.29,4.29,0,0,0,.88-.12,48.93,48.93,0,0,1,8.66-1.15,35.33,35.33,0,0,1,6.75.37,28.29,28.29,0,0,1,10.25,3.61,4.77,4.77,0,0,0,.5.27,1.85,1.85,0,0,0,2.33-.74M47.41,35a2.34,2.34,0,0,0-.78-3.19l-.35-.21a35.72,35.72,0,0,0-7.38-3.3,45.39,45.39,0,0,0-15.7-2.13,41.19,41.19,0,0,0-7.39.92c-1,.22-2,.48-2.94.77A2.26,2.26,0,0,0,11.29,30a2.32,2.32,0,0,0,1.44,2.2,2.47,2.47,0,0,0,1.67,0,37,37,0,0,1,10.38-1.46,43,43,0,0,1,7.91.74,35.46,35.46,0,0,1,9.58,3.18c.66.34,1.3.72,1.95,1.08A2.33,2.33,0,0,0,47.41,35m.35-8.49A2.79,2.79,0,0,0,52,24.11c0-.2,0-.4-.08-.6a2.78,2.78,0,0,0-1.4-1.85,35.91,35.91,0,0,0-6.41-2.91,56.19,56.19,0,0,0-16.86-2.89,58.46,58.46,0,0,0-7,.21,48.31,48.31,0,0,0-6.52,1c-.87.2-1.73.42-2.58.7a2.73,2.73,0,0,0-1.85,2.68,2.79,2.79,0,0,0,2,2.61,2.9,2.9,0,0,0,1.6,0c.87-.23,1.75-.47,2.63-.66a45.52,45.52,0,0,1,7.26-.91,57.42,57.42,0,0,1,6.4,0,53.7,53.7,0,0,1,6.11.72,42.63,42.63,0,0,1,8.49,2.35,33.25,33.25,0,0,1,4,2"/></g>
+                </svg></a>
+            </div>
+            <div class="artista">
+                <img src="./images/milton_nascimento.jpg" alt="Artista 3">
+                <div class="nomeArtista">Milton Nascimento</div>
+                <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO25VFtg?si=u5Qz9WOqR3u6l6zmxS93GQ"><svg width="300px" height="50" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect x="0" y="0" width="400" height="100" fill="none"/>
+                    <rect x="100.00" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="112.42" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="124.84" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="137.27" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="149.69" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="162.11" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="174.53" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="186.96" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="199.38" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="211.80" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="224.22" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="236.64" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="249.07" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="261.49" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="273.91" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="286.33" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="298.76" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="311.18" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="323.60" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="336.02" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="348.44" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="360.87" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="373.29" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <g transform="translate(20,20)"><path fill="#ffffff" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0M43.73,43.2a1.85,1.85,0,0,0-.47-2.43,5,5,0,0,0-.48-.31,30.64,30.64,0,0,0-5.92-2.72,37.07,37.07,0,0,0-11.56-1.84c-1.33.07-2.67.12-4,.23a52.44,52.44,0,0,0-7.08,1.12,3.45,3.45,0,0,0-.54.16,1.83,1.83,0,0,0-1.11,2.08A1.79,1.79,0,0,0,14.37,41a4.29,4.29,0,0,0,.88-.12,48.93,48.93,0,0,1,8.66-1.15,35.33,35.33,0,0,1,6.75.37,28.29,28.29,0,0,1,10.25,3.61,4.77,4.77,0,0,0,.5.27,1.85,1.85,0,0,0,2.33-.74M47.41,35a2.34,2.34,0,0,0-.78-3.19l-.35-.21a35.72,35.72,0,0,0-7.38-3.3,45.39,45.39,0,0,0-15.7-2.13,41.19,41.19,0,0,0-7.39.92c-1,.22-2,.48-2.94.77A2.26,2.26,0,0,0,11.29,30a2.32,2.32,0,0,0,1.44,2.2,2.47,2.47,0,0,0,1.67,0,37,37,0,0,1,10.38-1.46,43,43,0,0,1,7.91.74,35.46,35.46,0,0,1,9.58,3.18c.66.34,1.3.72,1.95,1.08A2.33,2.33,0,0,0,47.41,35m.35-8.49A2.79,2.79,0,0,0,52,24.11c0-.2,0-.4-.08-.6a2.78,2.78,0,0,0-1.4-1.85,35.91,35.91,0,0,0-6.41-2.91,56.19,56.19,0,0,0-16.86-2.89,58.46,58.46,0,0,0-7,.21,48.31,48.31,0,0,0-6.52,1c-.87.2-1.73.42-2.58.7a2.73,2.73,0,0,0-1.85,2.68,2.79,2.79,0,0,0,2,2.61,2.9,2.9,0,0,0,1.6,0c.87-.23,1.75-.47,2.63-.66a45.52,45.52,0,0,1,7.26-.91,57.42,57.42,0,0,1,6.4,0,53.7,53.7,0,0,1,6.11.72,42.63,42.63,0,0,1,8.49,2.35,33.25,33.25,0,0,1,4,2"/></g>
+                </svg></a>
+            </div>
+            <div class="artista">
+                <img src="./images/gilberto_gil.jpg" alt="Artista 4"></img>
+                <div class="nomeArtista">Gilberto Gil</div>
+                <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO25VFtg?si=tSIcQKXqTgi8OxpTaJMiNA"><svg width="300px" height="50" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect x="0" y="0" width="400" height="100" fill="none"/>
+                    <rect x="100.00" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="112.42" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="124.84" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="137.27" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="149.69" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="162.11" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="174.53" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="186.96" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="199.38" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="211.80" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="224.22" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="236.64" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="249.07" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="261.49" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="273.91" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="286.33" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="298.76" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="311.18" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="323.60" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="336.02" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="348.44" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="360.87" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <rect x="373.29" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#fff"/>
+                    <g transform="translate(20,20)"><path fill="#fff" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0M43.73,43.2a1.85,1.85,0,0,0-.47-2.43,5,5,0,0,0-.48-.31,30.64,30.64,0,0,0-5.92-2.72,37.07,37.07,0,0,0-11.56-1.84c-1.33.07-2.67.12-4,.23a52.44,52.44,0,0,0-7.08,1.12,3.45,3.45,0,0,0-.54.16,1.83,1.83,0,0,0-1.11,2.08A1.79,1.79,0,0,0,14.37,41a4.29,4.29,0,0,0,.88-.12,48.93,48.93,0,0,1,8.66-1.15,35.33,35.33,0,0,1,6.75.37,28.29,28.29,0,0,1,10.25,3.61,4.77,4.77,0,0,0,.5.27,1.85,1.85,0,0,0,2.33-.74M47.41,35a2.34,2.34,0,0,0-.78-3.19l-.35-.21a35.72,35.72,0,0,0-7.38-3.3,45.39,45.39,0,0,0-15.7-2.13,41.19,41.19,0,0,0-7.39.92c-1,.22-2,.48-2.94.77A2.26,2.26,0,0,0,11.29,30a2.32,2.32,0,0,0,1.44,2.2,2.47,2.47,0,0,0,1.67,0,37,37,0,0,1,10.38-1.46,43,43,0,0,1,7.91.74,35.46,35.46,0,0,1,9.58,3.18c.66.34,1.3.72,1.95,1.08A2.33,2.33,0,0,0,47.41,35m.35-8.49A2.79,2.79,0,0,0,52,24.11c0-.2,0-.4-.08-.6a2.78,2.78,0,0,0-1.4-1.85,35.91,35.91,0,0,0-6.41-2.91,56.19,56.19,0,0,0-16.86-2.89,58.46,58.46,0,0,0-7,.21,48.31,48.31,0,0,0-6.52,1c-.87.2-1.73.42-2.58.7a2.73,2.73,0,0,0-1.85,2.68,2.79,2.79,0,0,0,2,2.61,2.9,2.9,0,0,0,1.6,0c.87-.23,1.75-.47,2.63-.66a45.52,45.52,0,0,1,7.26-.91,57.42,57.42,0,0,1,6.4,0,53.7,53.7,0,0,1,6.11.72,42.63,42.63,0,0,1,8.49,2.35,33.25,33.25,0,0,1,4,2"/></g>
+                </svg></a>
+            </div>
+            <div class="artista">
+                <img src="./images/elis.jpg" alt="Artista 4"></img>
+                <div class="nomeArtista">Elis Regina</div>
+                <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO0gnPos?si=j6TMpA8mSlKbasRPhVFLPA"><svg width="300px" height="50" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect x="0" y="0" width="400" height="100" fill="none"/>
+                    <rect x="100.00" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="112.42" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="124.84" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="137.27" y="37.50" width="6.71" height="25.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="149.69" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="162.11" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="174.53" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="186.96" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="199.38" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="211.80" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="224.22" y="27.00" width="6.71" height="46.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="236.64" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="249.07" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="261.49" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="273.91" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="286.33" y="30.50" width="6.71" height="39.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="298.76" y="20.00" width="6.71" height="60.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="311.18" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="323.60" y="23.50" width="6.71" height="53.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="336.02" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="348.44" y="34.00" width="6.71" height="32.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="360.87" y="41.00" width="6.71" height="18.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <rect x="373.29" y="44.50" width="6.71" height="11.00" rx="3.36" ry="3.36" fill="#ffffff"/>
+                    <g transform="translate(20,20)"><path fill="#ffffff" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0M43.73,43.2a1.85,1.85,0,0,0-.47-2.43,5,5,0,0,0-.48-.31,30.64,30.64,0,0,0-5.92-2.72,37.07,37.07,0,0,0-11.56-1.84c-1.33.07-2.67.12-4,.23a52.44,52.44,0,0,0-7.08,1.12,3.45,3.45,0,0,0-.54.16,1.83,1.83,0,0,0-1.11,2.08A1.79,1.79,0,0,0,14.37,41a4.29,4.29,0,0,0,.88-.12,48.93,48.93,0,0,1,8.66-1.15,35.33,35.33,0,0,1,6.75.37,28.29,28.29,0,0,1,10.25,3.61,4.77,4.77,0,0,0,.5.27,1.85,1.85,0,0,0,2.33-.74M47.41,35a2.34,2.34,0,0,0-.78-3.19l-.35-.21a35.72,35.72,0,0,0-7.38-3.3,45.39,45.39,0,0,0-15.7-2.13,41.19,41.19,0,0,0-7.39.92c-1,.22-2,.48-2.94.77A2.26,2.26,0,0,0,11.29,30a2.32,2.32,0,0,0,1.44,2.2,2.47,2.47,0,0,0,1.67,0,37,37,0,0,1,10.38-1.46,43,43,0,0,1,7.91.74,35.46,35.46,0,0,1,9.58,3.18c.66.34,1.3.72,1.95,1.08A2.33,2.33,0,0,0,47.41,35m.35-8.49A2.79,2.79,0,0,0,52,24.11c0-.2,0-.4-.08-.6a2.78,2.78,0,0,0-1.4-1.85,35.91,35.91,0,0,0-6.41-2.91,56.19,56.19,0,0,0-16.86-2.89,58.46,58.46,0,0,0-7,.21,48.31,48.31,0,0,0-6.52,1c-.87.2-1.73.42-2.58.7a2.73,2.73,0,0,0-1.85,2.68,2.79,2.79,0,0,0,2,2.61,2.9,2.9,0,0,0,1.6,0c.87-.23,1.75-.47,2.63-.66a45.52,45.52,0,0,1,7.26-.91,57.42,57.42,0,0,1,6.4,0,53.7,53.7,0,0,1,6.11.72,42.63,42.63,0,0,1,8.49,2.35,33.25,33.25,0,0,1,4,2"/></g>
+                </svg></a>
+            </div>
+        </section>
+        <section class="genre-introduction" id="genreIntroduction">
+            <div class="overlay">
+                <div class="genre-content">
+                    <h1 class="genre-title">Jazz</h1>
+                    <p class="genre-description">
+                        O jazz é um gênero musical que se originou nas comunidades afro-americanas de New Orleans, Estados Unidos, no final do século XIX e início do século XX. Caracteriza-se por improvisação, ritmo swing e notas azuis, e desempenhou um papel importante no desenvolvimento da música popular mundial.
+                    </p>
+                    <a href="#" id="show-artists" class="genre-link">Ver Artistas</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="responsaveis-section" class="responsaveis">
+    <h3 class="titulo-responsaveis">Responsáveis Destaque</h3>
+    <div class="responsaveis-cards"></div> <!-- Aqui você pode colocar os cards dos responsáveis -->
+</section>
+
+    </main>
+    <footer>
+        <div class="footer-containerGe">
+            <div class="footer-sectionGe">
+                <h3 class="footer-headingGe">Criadores do Site</h3>
+                <p class="footer-textGe">Adriano Bedin Junior</p>
+                <p class="footer-textGe">Alysson Alves Fernanades Santos</p>
+                <p class="footer-textGe">Caio Fernandes Oliveira</p>
+                <p class="footer-textGe">Fernanda Carolina Batista de Souza</p>
+                <p class="footer-textGe">Geovana Pissinin Menossi</p>
+                <p class="footer-textGe">Maria Clara Silva Braz Paião</p>
+                <br>
+            </div>
+            <div class="footer-sectionGe">
+                <h3 class="footer-headingGe">Explore o Mundo da Cultura Brasileira</h3>
+                    <p class="footer-textGe">Descubra nossa rica literatura, gastronomia, arquitetura, cinema e música.</p>
+                    <p class="footer-textGe">Conheça mais sobre a diversidade cultural do Brasil.</p>
+                    <p class="footer-textGe">Acompanhe as novidades e atualizações em nosso site.</p>
+                    <p class="footer-textGe">Participe da nossa comunidade e compartilhe sua paixão pela cultura brasileira.</p>
+                </ul>
+            </div>
+            <div class="footer-sectionGe">
+                <h3 class="footer-headingGe">Conheça nossas redes sociais!</h3>
+                <div class="iconRow">
+                    <div class="icon face">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg enable-background="new 0 0 56.693 56.693" height="25px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="25" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+                        </a>
+                    </div>
+                    <div class="icon zap"> 
+                        <a href="https://web.whatsapp.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2.5" width="20px" height="20px" fill="black" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icon insta">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icon discord">
+                        <a href="https://discord.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-discord" viewBox="0 0 16 16">
+                            <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottomGe">
+            <div class="footer-logoGe">&copy; 2024 The Brazilians. All rights reserved.</div>
+            <div class="footer-linksGe">
+                <a href="sobre.html" class="footer-linkGe">
+                    Sobre 
+                    <svg style="position: relative; top:2px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                    </svg>
+                </a>
+                <a href="contato.html" class="footer-linkGe">
+                    Contato
+                    <svg style="position: relative; top:2px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+        </svg>
+    </button>
+</body>
+</html>
+<script>
+    document.querySelectorAll('.tab_label').forEach((label, index) => {
+        label.addEventListener('click', () => {
+            const tabId = `tab${index + 1}`;
+            document.getElementById(tabId).checked = true;
+
+            setTimeout(() => {
+                switch (tabId) {
+                    case 'tab1':
+                        window.location.href = 'index.html';
+                        break;
+                    case 'tab2':
+                        window.location.href = 'literatura.html';
+                        break;
+                    case 'tab3':
+                        window.location.href = 'gastronomia.html';
+                        break;
+                    case 'tab4':
+                        window.location.href = 'cinema.html';
+                        break;
+                    case 'tab5':
+                        window.location.href = 'musica.html';
+                        break;
+                    case 'tab6':
+                        window.location.href = 'arquitetura.html';
+                        break;
+                }
+            }, 100);
+        });
+    });
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    window.onscroll = function() {
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    };
+    window.addEventListener('load', () => {
+        const textoBanner = document.querySelector('.texto-banner');
+        textoBanner.classList.add('animate');
+    });
+        document.getElementById('show-artists').addEventListener('click', function(event) {
+            event.preventDefault();
+            mostrarArtistas(); 
+        });
+
+        function mostrarArtistas() {
+            document.getElementById('responsaveis-section').classList.remove('hidden');
+            document.getElementById('responsaveis-section ').scrollIntoView({ behavior: 'smooth' });
+        }
+
+</script>
+<script>
+    // Função para buscar as subcategorias
+    function fetchSubcategorias() {
+        fetch('http://10.188.35.110:8000/subcategorias')
+            .then(response => response.json())
+            .then(data => {
+                const select = document.getElementById('generosMusicais');
+
+                // Limpa as opções existentes, exceto a primeira
+                select.innerHTML = '<option value="">Selecione um gênero musical</option>';
+
+                // Itera sobre as subcategorias e adiciona ao select se cultura_id for 4
+                data.subcategorias.forEach(subcategoria => {
+                    if (subcategoria.culturas_id_cultura === 4) {
+                        const option = document.createElement('option');
+                        option.value = subcategoria.id_subcategoria; // Atribui o id da subcategoria como valor
+                        option.textContent = subcategoria.nome_subcategoria; // Usa o nome da subcategoria como texto
+                        select.appendChild(option);
+                    }
+                });
+            })
+            .catch(error => console.error('Erro ao buscar subcategorias:', error));
+    }
+
+    // Função para buscar o post com base no nome da subcategoria
+    function fetchPostBySubcategoria(subcategoriaNome) {
+        fetch('http://10.188.35.110:8000/posts')
+            .then(response => response.json())
+            .then(postsData => {
+                console.log(subcategoriaNome);
+                const post = postsData.posts.find(post => post.nome_post === subcategoriaNome);
+
+                if (post) {
+                    // Atualiza o título e a descrição da seção
+                    const genreTitle = document.querySelector('.genre-title');
+                    const genreDescription = document.querySelector('.genre-description');
+
+                    genreTitle.textContent = post.nome_post; // Atualiza o título com o nome do post
+                    genreDescription.textContent = post.descricao_post; // Atualiza a descrição com a descrição do post
+                } else {
+                    console.error('Post não encontrado para a subcategoria:', subcategoriaNome);
+                }
+            })
+            .catch(error => console.error('Erro ao buscar posts:', error));
+    }
+    async function fetchArtistasBySubcategoria(subcategoriaId) {
+    try {
+        // Faz o fetch de todos os posts de artistas relacionados à subcategoria
+        const response = await fetch(`http://10.188.35.110:8000/posts?subcategoria_id=${subcategoriaId}`);
+        const data = await response.json();
+
+        // Limpa a seção existente de artistas antes de inserir os novos
+       
+
+        if (data.posts && data.posts.length > 0) {
+            const artistasFiltrados = data.posts.filter(artista => 
+                artista.subcategorias_id_subcategoria == subcategoriaId
+            );
+            const postIds = artistasFiltrados.map(artista => artista.id_post);
+            console.log(postIds)
+            const responsaveis = await fetchResponsaveisByPostIds(postIds); // Buscar responsáveis pelos IDs dos posts
+
+            data.posts.forEach(artista => {
+             
+              if (artista.subcategorias_id_subcategoria == subcategoriaId) {
+               
+              }
+              
+            });
+
+            // Agora adicione os responsáveis na seção correspondente
+            displayResponsaveis(responsaveis);
+        } else {
+            artistasSection.innerHTML = '<p>Nenhum artista encontrado para essa subcategoria.</p>';
+        }
+
+    } catch (error) {
+        console.error('Erro ao buscar os artistas:', error);
+    }
+}
+
+// Nova função para buscar os responsáveis pelos IDs dos posts
+async function fetchResponsaveisByPostIds(postIds) {
+    const responsaveisSet = new Set(); // Usar um Set para armazenar responsáveis únicos
+
+    try {
+        // Itera sobre cada postId
+        for (let i = 0; i < postIds.length; i++) { // Começa em 0 para incluir todos os postIds
+            const postId = postIds[i];
+            console.log("foi lido o id de numero "+postId)
+            const response = await fetch(`http://10.188.35.110:8000/responsaveis?post_id=${postId}`);
+            const data = await response.json();
+
+            // Verifica se a resposta contém responsáveis e adiciona ao Set
+            if (data.responsaveis) {
+                data.responsaveis.forEach(responsavel => {
+                    if (responsavel.posts_id_post === postId) { // Verifica se o responsável é para o postId atual
+                        responsaveisSet.add(responsavel); // Adiciona responsável ao Set (garante unicidade)
+                    }
+                });
+            }
+        }
+        
+        // Converte o Set de volta para um array
+        return Array.from(responsaveisSet);
+    } catch (error) {
+        console.error('Erro ao buscar responsáveis:', error);
+        return [];
+    }
+}
+
+// Função para exibir responsáveis
+// Função para exibir responsáveis
+function displayResponsaveis(responsaveis) {
+    const responsaveisSection = document.querySelector('.responsaveis');
+    responsaveisSection.innerHTML = ''; // Limpa a seção existente
+
+    if (responsaveis.length > 0) {
+        responsaveis.forEach(responsavel => {
+            console.log(responsavel)
+            const responsavelDiv = document.createElement('div');
+            responsavelDiv.classList.add('responsavel');
+
+            // Adiciona a imagem do responsável
+            const img = document.createElement('img');
+            const nomeReal = responsavel.foto ? responsavel.foto.split("/").pop() : null;
+           
+            img.src =`http://10.188.35.110:8000/responsaveisimg/${nomeReal}`; ; // A URL da imagem
+            img.alt = `Foto de ${responsavel.nome}`;
+            img.classList.add('responsavel-imagem'); // Adiciona uma classe para estilização, se necessário
+
+            // Adiciona o nome
+            const nomeResponsavelDiv = document.createElement('div');
+            nomeResponsavelDiv.classList.add('nomeResponsavel');
+            nomeResponsavelDiv.textContent = responsavel.nome;
+
+            // Adiciona a data de nascimento
+            const dataInDiv = document.createElement('div');
+            dataInDiv.classList.add('dataInResponsavel');
+            dataInDiv.textContent = `Data de Nascimento: ${responsavel.data_in}`;
+
+            // Adiciona a data de falecimento
+            const dataOutDiv = document.createElement('div');
+            dataOutDiv.classList.add('dataOutResponsavel');
+            dataOutDiv.textContent = `Data de Falecimento: ${responsavel.data_out ? responsavel.data_out : 'Vivo'}`; // Verifica se a data de falecimento existe
+
+            // Adiciona a biografia
+            const biografiaDiv = document.createElement('div');
+            biografiaDiv.classList.add('biografiaResponsavel');
+            biografiaDiv.textContent = responsavel.biografia;
+
+            // Monta a estrutura no DOM
+            responsavelDiv.appendChild(img);
+            responsavelDiv.appendChild(nomeResponsavelDiv);
+            responsavelDiv.appendChild(dataInDiv);
+            responsavelDiv.appendChild(dataOutDiv);
+            responsavelDiv.appendChild(biografiaDiv);
+            responsaveisSection.appendChild(responsavelDiv);
+        });
+    } else {
+        responsaveisSection.innerHTML = '<p>Nenhum responsável encontrado.</p>';
+    }
+}
+
+
+
+
+
+
+    // Evento de mudança para o select
+    document.getElementById('generosMusicais').addEventListener('change', function () {
+        const selectedValue = this.value;
+        const selectedText = this.options[this.selectedIndex].text;
+
+        if (selectedValue) {
+            console.log("Valor selecionado: " + selectedValue);
+            console.log("Nome selecionado: " + selectedText);
+            fetchPostBySubcategoria(selectedText);
+            fetchArtistasBySubcategoria(selectedValue);
+        }
+    });
+
+    // Chama a função para carregar as subcategorias ao carregar a página
+    fetchSubcategorias();
+</script>
+
+
+</body>
+</html>

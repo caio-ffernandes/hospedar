@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <title>Página Inicial</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img class="img_logo" src="images/logo_official.png" alt="">
+        </div>
+        <div class="links">
+            <div class="tab-container">
+                <input type="radio" name="tab" id="tab1" class="tab tab--1" checked/>
+                <label class="tab_label" for="tab1">Início</label>
+        
+                <input type="radio" name="tab" id="tab2" class="tab tab--2" />
+                <label class="tab_label" for="tab2">Literatura</label>
+        
+                <input type="radio" name="tab" id="tab3" class="tab tab--3" />
+                <label class="tab_label" for="tab3">Gastronomia</label>
+        
+                <input type="radio" name="tab" id="tab4" class="tab tab--4" />
+                <label class="tab_label" for="tab4">Cinema</label>
+        
+                <input type="radio" name="tab" id="tab5" class="tab tab--5" />
+                <label class="tab_label" for="tab5">Música</label>
+        
+                <input type="radio" name="tab" id="tab6" class="tab tab--6" />
+                <label class="tab_label" for="tab6">Arquitetura</label>
+        
+                <div class="indicator"></div>
+            </div>
+        </div>
+        
+        <div class="button_search">
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Type your text">
+                <button class="search__button">
+                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <button class="bt_login"><a class="link_login" href="login.html">Login</a></button>
+        </div>
+    </nav>
+    <main>
+        <div class="banner">
+            <img src="images/bannerBr.jpg" alt="" class="bannerBr">
+        </div>
+        <div class="row">
+            <div class="overlay"></div>
+            <div class="textoindex"><h1>Brasil: Um país de diversidade, cultura e grandeza</h1></div>
+            <div class="infoindex">
+                <div class="pindex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                    </svg>
+                    <p class="ppindex">O Brasil é o país mais populoso da América do Sul, com mais de 213 milhões de habitantes.</p>
+                </div>
+                <div class="pindex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                    </svg>
+                    <p class="ppindex">O Brasil possui a maior biodiversidade do planeta, com a Amazônia abrigando cerca de 10% de todas as espécies conhecidas.</p>
+
+                </div>
+                <div class="pindex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                    </svg>
+                    <p class="ppindex">O Brasil é o único país de língua portuguesa nas Américas, com uma rica diversidade cultural, refletida em suas festas, músicas e tradições.</p>
+                </div>
+            </div>
+        </div>
+        <div class="highlights">
+            <div class="textodestaques"><h1>Belezas e Biodiversidade Brasileira</h1></div>
+            <div class="highlight-container">
+                <div class="highlight">
+                    <img src="images/cataratas.jpg" alt="Destaque 1" class="highlight-image">
+                    <h3>Bacias Hidrográficas no Brasil</h3>
+                    <p>As bacias hidrográficas são áreas que drenam água para um único corpo d'água, como rios e lagos. No Brasil, as principais bacias incluem a Amazônica, a do Paraná e a do São Francisco. Essas bacias são essenciais para a gestão de recursos hídricos, o abastecimento de água e a preservação da biodiversidade.</p>
+                </div>
+                <div class="highlight">
+                    <img src="images/floresta.jpg" alt="Destaque 2" class="highlight-image">
+                    <h3>Flora do Brasil</h3>
+                    <p>Com aproximadamente 55.000 espécies de plantas, a flora brasileira é diversificada e inclui a emblemática Amazônia, onde se encontram as maiores árvores do mundo, como a samaúma, e uma rica variedade de orquídeas e bromélias.</p>
+                </div>
+                <div class="highlight">
+                    <img src="images/florestac.jpg" alt="Destaque 3" class="highlight-image">
+                    <h3>Extensão Territorial</h3>
+                    <p>O Brasil é o quinto maior país do mundo, ocupando uma área de mais de 8,5 milhões de km², que se estende por diferentes biomas, incluindo florestas, savanas, montanhas e pantanais, cada um com suas características únicas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="card">
+                <div class="content">
+                    <div class="frontge">
+                        <div class="backge-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#e8eaed"><path d="M480-80q-61 0-125-22t-116-60q-52-38-85.5-89T120-360v-120l160 120-62 62q29 51 92 88t130 47v-357H320v-80h120v-47q-35-13-57.5-43.5T360-760q0-50 35-85t85-35q50 0 85 35t35 85q0 39-22.5 69.5T520-647v47h120v80H520v357q67-10 130-47t92-88l-62-62 160-120v120q0 58-33.5 109T721-162q-52 38-116 60T480-80Zm0-640q17 0 28.5-11.5T520-760q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760q0 17 11.5 28.5T480-720Z"/></svg>
+                            <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                            <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M20.84375 0.03125C20.191406 0.0703125 19.652344 0.425781 19.21875 1.53125C18.988281 2.117188 18.5 3.558594 18.03125 4.9375C17.792969 5.636719 17.570313 6.273438 17.40625 6.75C17.390625 6.796875 17.414063 6.855469 17.40625 6.90625C17.398438 6.925781 17.351563 6.949219 17.34375 6.96875L17.25 7.25C18.566406 7.65625 19.539063 8.058594 19.625 8.09375C22.597656 9.21875 28.351563 11.847656 33.28125 16.78125C38.5 22 41.183594 28.265625 42.09375 30.71875C42.113281 30.761719 42.375 31.535156 42.75 32.84375C42.757813 32.839844 42.777344 32.847656 42.78125 32.84375C43.34375 32.664063 44.953125 32.09375 46.3125 31.625C47.109375 31.351563 47.808594 31.117188 48.15625 31C49.003906 30.714844 49.542969 30.292969 49.8125 29.6875C50.074219 29.109375 50.066406 28.429688 49.75 27.6875C49.605469 27.347656 49.441406 26.917969 49.25 26.4375C47.878906 23.007813 45.007813 15.882813 39.59375 10.46875C33.613281 4.484375 25.792969 1.210938 22.125 0.21875C21.648438 0.0898438 21.234375 0.0078125 20.84375 0.03125 Z M 16.46875 9.09375L0.0625 48.625C-0.09375 48.996094 -0.00390625 49.433594 0.28125 49.71875C0.472656 49.910156 0.738281 50 1 50C1.128906 50 1.253906 49.988281 1.375 49.9375L40.90625 33.59375C40.523438 32.242188 40.222656 31.449219 40.21875 31.4375C39.351563 29.089844 36.816406 23.128906 31.875 18.1875C27.035156 13.34375 21.167969 10.804688 18.875 9.9375C18.84375 9.925781 17.8125 9.5 16.46875 9.09375 Z M 17 16C19.761719 16 22 18.238281 22 21C22 23.761719 19.761719 26 17 26C15.140625 26 13.550781 24.972656 12.6875 23.46875L15.6875 16.1875C16.101563 16.074219 16.550781 16 17 16 Z M 31 22C32.65625 22 34 23.34375 34 25C34 25.917969 33.585938 26.730469 32.9375 27.28125L32.90625 27.28125C33.570313 27.996094 34 28.949219 34 30C34 32.210938 32.210938 34 30 34C27.789063 34 26 32.210938 26 30C26 28.359375 26.996094 26.960938 28.40625 26.34375L28.3125 26.3125C28.117188 25.917969 28 25.472656 28 25C28 23.34375 29.34375 22 31 22 Z M 21 32C23.210938 32 25 33.789063 25 36C25 36.855469 24.710938 37.660156 24.25 38.3125L20.3125 39.9375C18.429688 39.609375 17 37.976563 17 36C17 33.789063 18.789063 32 21 32 Z M 9 34C10.65625 34 12 35.34375 12 37C12 38.65625 10.65625 40 9 40C7.902344 40 6.960938 39.414063 6.4375 38.53125L8.25 34.09375C8.488281 34.03125 8.742188 34 9 34Z"></path>
+                            </g>
+                            <strong style="position: relative; top: 15px; font-size: 20px;">Praias Brasileiras</strong>
+                        </div>
+                    </div>
+                    <div class="backge">
+                        <div class="beach" id="copacabana" style='background-color: #033D29'>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="position: relative; left: 10px;" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
+                            <p>Praia de Copacabana - RJ</p>
+                        </div>
+                        <div id="espelho" class="beach" style='background-color: #065438 ' >
+                            <svg xmlns="http://www.w3.org/2000/svg" style="position: relative; left: 10px" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
+                            <p>Praia do Espelho - BA</p>
+                        </div>
+                        <div id="jericoacoara" class="beach" style='background-color: #046036 '>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="position: relative; left: 10px" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
+                            <p>Praia de Jericoacoara - CE</p>
+                        </div>
+                        <div id="pipa" class="beach" style='background-color: #06834E '>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="position: relative; left: 10px" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
+                            <p>Praia de Pipa - RN</p>
+                        </div>
+                        <div id="farol-da-barra" class="beach" style='background-color: #07965A '>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="position: relative; left: 10px" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
+                            <p>Praia do Farol da Barra - BA</p>
+                        </div>
+                        <div id="sancho" class="beach" style='background-color: #08AA66 '>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="position: relative; left: 10px" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
+                            <p>Praia do Sancho - PE</p>
+                        </div>
+                        <div id="campeche" class="beach" style='background-color: #09BD72 '>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="position: relative; left: 10px" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
+                            <p>Praia do Campeche - SC</p>
+                        </div>
+                        <div id="mole" class="beach" style='background-color: #0ce087 '>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="position: relative; left: 10px" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 530-374l56-56 254 254-56 56Zm-546-28q-60-60-89-135t-29-153q0-78 29-152t89-134q60-60 134.5-89.5T525-841q78 0 152.5 29.5T812-722L238-148Zm8-122 54-54q-16-21-30.5-43T243-411q-12-22-21-44t-16-43q-11 59-1.5 118T246-270Zm112-110 222-224q-43-33-86.5-53.5t-81.5-28q-38-7.5-68.5-2.5T296-666q-17 18-22 48.5t2.5 69q7.5 38.5 28 81.5t53.5 87Zm278-280 56-54q-53-32-112-42t-118 2q22 7 44 16t44 20.5q22 11.5 43.5 26T636-660Z"/></svg>
+                            <p>Praia Mole - SC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map" style="width: 70%; height: 600px; border-radius: 5px;"></div>
+        </div>
+        <div class="row3" style="display: flex; flex-direction: column; position: relative; top: 20px;">
+            <div class="textofauna"><h1>Fauna Brasileira</h1></div>
+            <div class="container">
+                <div class="gallery">
+                    <figure class="gallery__item gallery__item--1">
+                        <img src="images/tucano.jpg" alt="Tucano" class="gallery__img">
+                        <figcaption class="gallery__caption">Tucano</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                        <img src="images/arara.jpg" alt="Arara" class="gallery__img">
+                        <figcaption class="gallery__caption">Arara-Azul</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--3">
+                        <img src="images/onca.jpg" alt="Onça" class="gallery__img">
+                        <figcaption class="gallery__caption">Onça Pintada</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--4">
+                        <img src="images/perereca.jpg" alt="Perereca" class="gallery__img">
+                        <figcaption class="gallery__caption">Perereca de Olhos Vermelhos</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--5">
+                        <img src="images/sagui.jpg" alt="Sagui" class="gallery__img">
+                        <figcaption class="gallery__caption">Sagui de Bigode</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--6">
+                        <img src="images/mico (1).jpg" alt="Mico" class="gallery__img">
+                        <figcaption class="gallery__caption">Mico-Leão-Dourado</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--7">
+                        <img src="images/guara.jpg" alt="Guará" class="gallery__img">
+                        <figcaption class="gallery__caption">Lobo-Guará</figcaption>
+                    </figure>
+                    <figure class="gallery__item gallery__item--8">
+                        <img src="images/tamandua.jpg" alt="Tamanduá" class="gallery__img">
+                        <figcaption class="gallery__caption">Tamanduá Bandeira</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-containerGe">
+            <div class="footer-sectionGe">
+                <h3 class="footer-headingGe">Criadores do Site</h3>
+                <p class="footer-textGe">Adriano Bedin Junior</p>
+                <p class="footer-textGe">Alysson Alves Fernanades Santos</p>
+                <p class="footer-textGe">Caio Fernandes Oliveira</p>
+                <p class="footer-textGe">Fernanda Carolina Batista de Souza</p>
+                <p class="footer-textGe">Geovana Pissinin Menossi</p>
+                <p class="footer-textGe">Maria Clara Silva Braz Paião</p>
+                <br>
+            </div>
+            <div class="footer-sectionGe">
+                <h3 class="footer-headingGe">Explore o Mundo da Cultura Brasileira</h3>
+                    <p class="footer-textGe">Descubra nossa rica literatura, gastronomia, arquitetura, cinema e música.</p>
+                    <p class="footer-textGe">Conheça mais sobre a diversidade cultural do Brasil.</p>
+                    <p class="footer-textGe">Acompanhe as novidades e atualizações em nosso site.</p>
+                    <p class="footer-textGe">Participe da nossa comunidade e compartilhe sua paixão pela cultura brasileira.</p>
+                </ul>
+            </div>
+            <div class="footer-sectionGe">
+                <h3 class="footer-headingGe">Conheça nossas redes sociais!</h3>
+                <div class="iconRow">
+                    <div class="icon face">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <svg enable-background="new 0 0 56.693 56.693" height="25px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="25" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+                        </a>
+                    </div>
+                    <div class="icon zap"> 
+                        <a href="https://web.whatsapp.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2.5" width="20px" height="20px" fill="black" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icon insta">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icon discord">
+                        <a href="https://discord.com/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-discord" viewBox="0 0 16 16">
+                            <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottomGe">
+            <div class="footer-logoGe">&copy; 2024 The Brazilians. All rights reserved.</div>
+            <div class="footer-linksGe">
+                <a href="sobre.html" class="footer-linkGe">
+                    Sobre 
+                    <svg style="position: relative; top:2px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                    </svg>
+                </a>
+                <a href="contato.html" class="footer-linkGe">
+                    Contato
+                    <svg style="position: relative; top:2px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+        </svg>
+    </button>  
+</body>
+</html>
+<script>
+    document.querySelectorAll('.tab_label').forEach((label, index) => {
+        label.addEventListener('click', () => {
+            const tabId = `tab${index + 1}`;
+            document.getElementById(tabId).checked = true;
+
+            setTimeout(() => {
+                switch (tabId) {
+                    case 'tab1':
+                        window.location.href = 'index.html';
+                        break;
+                    case 'tab2':
+                        window.location.href = 'literatura.html';
+                        break;
+                    case 'tab3':
+                        window.location.href = 'gastronomia.html';
+                        break;
+                    case 'tab4':
+                        window.location.href = 'cinema.html';
+                        break;
+                    case 'tab5':
+                        window.location.href = 'musica.html';
+                        break;
+                    case 'tab6':
+                        window.location.href = 'arquitetura.html';
+                        break;
+                }
+            }, 100);
+        });
+    });
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    window.onscroll = function() {
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    };
+    document.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll('.row, .highlights, .row2, .row3');
+
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.8) {
+            section.style.opacity = 1;
+            section.style.transform = 'translateY(0)';
+        }
+    });
+    });
+    var map = L.map('map').setView([-14.2350, -51.9253], 4); 
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    var beaches = [
+        { id: "copacabana", name: "Praia de Copacabana", coords: [-22.9711, -43.1822] }, 
+        { id: "espelho", name: "Praia do Espelho", coords: [-16.1977, -39.0791] }, 
+        { id: "jericoacoara", name: "Praia de Jericoacoara", coords: [-2.7900, -40.5126] }, 
+        { id: "pipa", name: "Praia de Pipa", coords: [-6.2112, -35.2064] }, 
+        { id: "farol-da-barra", name: "Praia do Farol da Barra", coords: [-13.0083, -38.5123] }, 
+        { id: "sancho", name: "Praia do Sancho", coords: [-8.3960, -34.7487] }, 
+        { id: "campeche", name: "Praia do Campeche", coords: [-27.6310, -48.4731] },
+        { id: "mole", name: "Praia Mole", coords: [-27.6025, -48.4328] }
+    ];
+
+    beaches.forEach(function(beach) {
+        L.marker(beach.coords).addTo(map)
+            .bindPopup(beach.name);
+        
+        document.getElementById(beach.id).addEventListener("click", function() {
+            map.setView(beach.coords, 14); 
+        });
+    });
+</script>
+<script src="index.js"></script>

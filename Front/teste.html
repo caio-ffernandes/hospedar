@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesGe2.css">
+    <title>The Brazilians</title>
+</head>
+<style>
+
+</style>
+<body>
+    <main>
+        <section class="genre-introduction">
+            <div class="overlay">
+                <div class="genre-content">
+                    <h1 class="genre-title">Jazz</h1>
+                    <p class="genre-description">
+                        O jazz é um gênero musical que se originou nas comunidades afro-americanas de New Orleans, Estados Unidos, no final do século XIX e início do século XX. Caracteriza-se por improvisação, ritmo swing e notas azuis, e desempenhou um papel importante no desenvolvimento da música popular mundial.
+                    </p>
+                    <a href="#" id="show-artists" class="genre-link">Ver Artistas</a>
+                </div>
+            </div>
+        </section>
+        <section id="artist-section" class="artist-section hidden">
+            <h3 class="titulo-artistas">Artistas Destaque</h3>
+            <div class="artistas-cards">
+                <div class="artista-card">
+                    <img src="images/matue.jpg" alt="Foto do Artista" class="artista-imagem">
+                    <h4 class="nome-artista">Matue</h4>
+                    <p class="descricao-artista">Breve descrição sobre o artista, sua carreira e principais músicas.</p>
+                </div>
+                <div class="artista-card">
+                    <img src="images/chico_buarque.jpg" alt="Foto do Artista" class="artista-imagem">
+                    <h4 class="nome-artista">Chico Buarque</h4>
+                    <p class="descricao-artista">Breve descrição sobre o artista, sua carreira e principais músicas.</p>
+                </div>
+                <div class="artista-card">
+                    <img src="images/rita.jpg" alt="Foto do Artista" class="artista-imagem">
+                    <h4 class="nome-artista">Rita Lee</h4>
+                    <p class="descricao-artista">Breve descrição sobre o artista, sua carreira e principais músicas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('show-artists').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita o comportamento padrão do link
+            mostrarArtistas(); // Chama a função para mostrar os artistas
+        });
+
+        function mostrarArtistas() {
+            document.getElementById('artist-section').classList.remove('hidden');
+            document.getElementById('artist-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
