@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bedb7b9f-6e2d-4061-843b-135a91f0bdc6" name="Changes" comment="segundo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="bedb7b9f-6e2d-4061-843b-135a91f0bdc6" name="Changes" comment="segundo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -49,6 +45,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\46412975845\Downloads\Hospedar\Back\app" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Brazil" type="Python.FastAPI">
       <option name="file" value="C:\Users\46412975845\Documents\brazillians\main.py" />
@@ -106,6 +107,7 @@
       <workItem from="1730283772859" duration="2229000" />
       <workItem from="1730456400280" duration="2469000" />
       <workItem from="1731068083327" duration="5073000" />
+      <workItem from="1731497966726" duration="1831000" />
     </task>
     <task id="LOCAL-00001" summary="segundo">
       <option name="closed" value="true" />
