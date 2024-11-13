@@ -10,6 +10,10 @@ app = "hospedar"  # Nome da sua aplicação no Fly.io
   protocol = "tcp"
   http_checks = []
 
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
   [services.concurrency]
     hard_limit = 25
     soft_limit = 20
