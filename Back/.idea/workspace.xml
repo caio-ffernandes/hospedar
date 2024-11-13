@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bedb7b9f-6e2d-4061-843b-135a91f0bdc6" name="Changes" comment="segundo">
-      <change beforePath="$PROJECT_DIR$/../fly.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../fly.toml" afterDir="false" />
-    </list>
+    <list default="true" id="bedb7b9f-6e2d-4061-843b-135a91f0bdc6" name="Changes" comment="segundo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1730283772859" duration="2229000" />
       <workItem from="1730456400280" duration="2469000" />
       <workItem from="1731068083327" duration="5073000" />
-      <workItem from="1731497966726" duration="5822000" />
+      <workItem from="1731497966726" duration="5872000" />
     </task>
     <task id="LOCAL-00001" summary="segundo">
       <option name="closed" value="true" />
