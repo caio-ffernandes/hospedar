@@ -1,15 +1,12 @@
-# fly.toml file for your app
-
-app = "hospedar"  # Nome da sua aplicação no Fly.io
-
 [build]
   builder = "heroku/builder:20"
+
 [processes]
-app = "uvicorn main:app --host 0.0.0.0 --port 8080"
+  app = "uvicorn Back.main:app --host 0.0.0.0 --port 8080"  # Corrigir a referência para a pasta Back
 
 [[services]]
   internal_port = 8080
-  processes = ["app"]  # Associa o processo 'app' ao serviço
+  processes = ["app"]
   [[services.ports]]
     handlers = ["http"]
     port = 80
