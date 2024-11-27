@@ -5,14 +5,14 @@ from fastapi.staticfiles import StaticFiles
 import os
 
 from Back.config.database import shutdown_db, startup_db
-from routers.culturas import router as culturas_router
-from routers.posts import router as posts_router
-from routers.subcategorias import router as subcategorias_router
-from routers.tipo_responsavel import router as tipo_responsavel_router
-from routers.responsaveis import router as responsaveis_router
-from routers.usuarios import router as usuarios_router
-from routers.usuariospost import router as usuarios_posts_router
-from auth.login import router as auth_router  # Importando a rota de autenticação
+from Back.routers.culturas import router as culturas_router
+from Back.routers.posts import router as posts_router
+from Back.routers.subcategorias import router as subcategorias_router
+from Back.routers.tipo_responsavel import router as tipo_responsavel_router
+from Back.routers.responsaveis import router as responsaveis_router
+from Back.routers.usuarios import router as usuarios_router
+from Back.routers.usuariospost import router as usuarios_posts_router
+from Back.auth.login import router as auth_router  # Importando a rota de autenticação
 
 app = FastAPI(title='SITE CULTURAL BRASILEIRO')
 
