@@ -4,7 +4,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import os
 
-from config.database import shutdown_db, startup_db
+from Back.config.database import shutdown_db, startup_db
 from routers.culturas import router as culturas_router
 from routers.posts import router as posts_router
 from routers.subcategorias import router as subcategorias_router
